@@ -1,0 +1,27 @@
+<?php
+    header('Content-Type: application/json');
+$servername = "192.168.0.2";
+
+$dbname = "playground";
+$conn = new MySQLi($servername, "webuser", "password", $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+ 
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+        $record = $_POST['record'];
+       
+        
+        $get_result = $conn->query("INSERT INTO records(record) VALUES ('com on lets go')"); 
+ 
+        if($get_result === true){
+        echo "Successfully Registered";
+        }else{
+        echo "Not Registered";
+        }
+    }else{
+        echo 'error';
+        echo $record;
+    }
+?>

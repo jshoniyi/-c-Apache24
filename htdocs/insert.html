@@ -1,0 +1,23 @@
+<?php
+    header('Content-Type: application/json');
+$servername = "192.168.1.10:3306";
+
+$dbname = "playground";
+$conn = new MySQLi($servername, "webuser", "password", $dbname);
+
+ 
+    if($_SERVER['REQUEST_METHOD']=='POST'){
+        $username = $_POST['username'];
+        $email = $_POST['email'];   
+        
+        $get_result = $conn->query("INSERT INTO users(username,email) VALUES ('$username','$email')"); 
+ 
+        if($get_result === true){
+        echo "Successfully Registered";
+        }else{
+        echo $username."Not Registered";
+        }
+    }else{
+        echo 'error';
+    }
+?>

@@ -1,0 +1,46 @@
+
+
+<?php
+$servername = "73.53.241.207:3306";
+$username = "webuser";
+$password = "password";
+$dbname = "playground";
+$conn = new MySQLi($servername, $username, $password, $dbname);	
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+echo "Connected successfully<br>";
+$sql = "SELECT * FROM records";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    
+        
+        
+             echo"<table id='Records' style='border-collapse: collapse; border: 1px solid; margin-left:180px; width:1000px; margin-top:30px;'>";
+            echo"<thead style='border:1px solid; background-color:#ffe3ab;' >";
+                echo"<tr>";
+                    
+                    echo"<th style='border: 1px solid; padding: .35em;' >Record</th>";
+                    
+                echo"</tr>";
+            echo"</thead>";
+
+            while($row = mysqli_fetch_array($result)) 
+                {
+                    echo"<tbody>";
+                        echo"<tr>";
+                            echo "<td style=' padding: .35em;'>" . $row['record'] . "</td>";
+                            
+                            ;
+                        echo"</tr>";
+                    echo"</tbody>";
+                }   
+        echo"</table>";
+    
+ }else {
+  echo "0 results";
+}
+?>
+

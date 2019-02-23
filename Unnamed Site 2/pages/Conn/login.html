@@ -1,0 +1,40 @@
+<html>
+
+<body>
+
+<form action="table.html" method="post">
+Name: <input type="text" name="name"><br>
+Password: <input type="text" name="token"><br>
+<input type="submit">
+</form>
+
+</body>
+<?php
+
+$nameErr = $tokenErr = "";
+$name = $token = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+  }
+
+  if (empty($_POST["token"])) {
+    $tokenErr = "Password is required";
+  } else {
+    $email = test_input($_POST["token"]);
+  }
+
+$name = stripslashes($name);
+$password = stripslashes($token);
+$username = mysql_real_escape_string($name);
+$password = mysql_real_escape_string($token);
+
+
+
+
+?>
+
+</html>

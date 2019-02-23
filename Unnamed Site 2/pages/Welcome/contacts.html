@@ -1,0 +1,26 @@
+<?php
+    
+$servername = "10.0.0.101";
+
+$dbname = "contact";
+$conn = new MySQLi($servername, "webuser", "password", $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
+       
+        $sql ="INSERT INTO contacts (name,email,message) VALUES ('$name','$email','$message')";
+        
+        if(mysqli_query($conn,$sql)){
+        echo "Successfully Registered";
+        }else{
+        echo "Not Registered";
+        }
+        
+
+       
+?>

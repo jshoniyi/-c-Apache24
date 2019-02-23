@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Bootstrap Agency Page Template</title>
+    <!-- TemplateEndEditable -->
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap-4.0.0.css" rel="stylesheet">
+    <!-- TemplateBeginEditable name="head" -->
+    <!-- TemplateEndEditable -->
+  </head>
+  <body>
+<header>
+  <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+			  <img class="img-thumbnail img-fluid" alt="800x200" style="width: 800px; height: 200px;" src="../images/sizuku0-300x1000.jpg" data-holder-rendered="true">
+            <div class="col-12">
+              <h1 class="text-center">T.O.S.C<br>
+              </h1>
+              <p class="text-center">Motivation Rediscovered</p>
+              <p class="text-center text-uppercase"><a href="https://www.gofundme.com/all-book-drive?sharetype=teams&amp;member=337914&amp;rcid=r01-152970378981-fe8d7788639943bb&amp;pc=em_co_campmgmt_w">DONATE </a></p>
+            </div>
+            <div class="col-12">
+<p>&nbsp;</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mb-4 mt-2 text-center">
+            <h2>ABOUT US</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 text-center col-xl-12 col-md-12">
+            <img class="rounded-circle img-fluid" alt="140x140" style="width: 140px; height: 140px;" src="../images/hand-1917895_960_720.png" data-holder-rendered="true">
+            <h3>Our Goals<br>
+            </h3>
+            <p>Our goal is to give hope back to those who’ve lost it. We will do this by providing food and water for them. We will Clothe and support them. Most importantly we will motivate them to become better and to set the bar higher.<br>
+            </p>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center col-xl-12 col-md-12">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="../images/140X140.gif" data-holder-rendered="true">
+            <h3>Our Purpose<br>
+            </h3>
+            <p>Our purpose is to show those with dyslexia, that their ‘abilities’… don’t have to disable their happiness, or hinder their right to feel one with everyone else. Its difficult sometimes to accept you are different from everyone else because everyone wants to belong somewhere or be apart of something. We are that place. We are those people. With us everyone belongs. As well as gets an equal chance at recognition because that’s what you, the people, deserve.</p>
+          </div>
+          <div class="col-lg-4 col-sm-12 text-center col-xl-12 col-md-12">
+            <img class="rounded-circle" alt="140x140" style="width: 140px; height: 140px;" src="../images/140X140.gif" data-holder-rendered="true">
+            <h3>Plan For The Future</h3>
+            <p>We need to provide for those who have lost the will to provide for themselves. Support and encourage those around us to become better. This is why we are creating a donation process that will, within budget, assist us with supplying those who need. Were working on visual and literal material to inform those of all ages about their ‘Ability’ and how to better understand and cope with it.</p>
+          </div>
+</div>
+        <div class="row"> </div>
+</div>
+<div class="container">
+    <div class="row"> </div>
+</div>
+    </section>
+    <div class="container"> </div>
+    <footer class="text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <p>Copyright © MyWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="../js/jquery-3.2.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="../js/popper.min.js"></script> 
+    <script src="../js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>
